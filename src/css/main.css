@@ -1,4 +1,17 @@
-body, {
- background: #323232;
- color: #dedede;
+body {
+ background: rgb(77, 76, 75);
+ color: #cf8ff4;
  }
+
+h1 {
+    color: rgb(205, 177, 50);
+}
+
+ .title {
+    background-color: rgb(144, 123, 123);
+ }
+
+ #title {
+    background: linear-gradient(to right, rgb(77, 76, 75), rgb(144, 123, 123));
+    color: darkseagreen
+ } 
