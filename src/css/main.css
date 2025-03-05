@@ -15,3 +15,13 @@ h1 {
     background: linear-gradient(to right, rgb(77, 76, 75), rgb(144, 123, 123));
     color: darkseagreen
  } 
+
+ a, a:visited, a:active {
+   padding: 0px 3px;
+   color: violet;
+ }
+
+ a:hover {
+   background: violet;
+   color:#323232;
+ }
