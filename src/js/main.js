@@ -7,3 +7,13 @@ function submit() {
     alert("Hello " + name + "! You said: " + message);
     document.getElementById("message").innerHTML = message;
 }
+
+function createNav() {
+    var nav = '<a href="/">Home</a>';
+    nav+='|<a href="/newpage/">My New Page</a>';
+    nav+='|<a href="more">More Pages</a>';
+    document.getElementById("topnav").innerHTML = nav;
+}
+
+document.addEventListener()
+createNav();
