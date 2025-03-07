@@ -11,9 +11,20 @@ function submit() {
 function createNav() {
     var nav = '<a href="/">Home</a>';
     nav+='|<a href="/newpage/">My New Page</a>';
-    nav+='|<a href="more">More Pages</a>';
+    nav+='|<a href="/more/">More Pages</a>';
     document.getElementById("topnav").innerHTML = nav;
 }
 
-document.addEventListener()
-createNav();
+document.addEventListener("DOMContentLoaded", () => {
+    createNav();
+});
+
+class anchor {
+    constructor(name, url) {
+        this.name = url;
+        this.url = this.url;
+    }
+    toHTML() {
+        return '<a href="' + this.url + '">' + this.name + '</a>';
+    }
+}
