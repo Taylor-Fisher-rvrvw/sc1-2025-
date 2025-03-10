@@ -9,11 +9,20 @@ function submit() {
 }
 
 function createNav() {
-    var nav = '<a href="/">Home</a>';
-    nav+='|<a href="/newpage/">My New Page</a>';
-    nav+='|<a href="/more/">More Pages</a>';
+    var anchors =[
+        new anchor("Home", "/"),
+        new anchor("My New Page", "/newpage/"),
+        new anchor("More Pages", "/more/"),
+        new anchor("BoOoOkS", "https://goodreads.com"),
+    ];
+    var nav = "";
+    for (var i = 0; i < anchors.length; i++) {
+        if (i > 0) {nav += "|";}
+        nav += anchors[i].toHTML();
+        }
     document.getElementById("topnav").innerHTML = nav;
 }
+
 
 document.addEventListener("DOMContentLoaded", () => {
     createNav();
@@ -21,8 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 class anchor {
     constructor(name, url) {
-        this.name = url;
-        this.url = this.url;
+        this.name = name;
+        this.url = url;
     }
     toHTML() {
         return '<a href="' + this.url + '">' + this.name + '</a>';
